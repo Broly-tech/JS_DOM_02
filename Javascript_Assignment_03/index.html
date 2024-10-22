@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Assignment 03</title>
+    </head>
+<body>
+    <h1>The Element Object</h1>
+    <h2>The appendChild() Method</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Click "Append" to append an item to end of the list :</p>
+    <button onclick="append()">Append</button>
+    <script>
+        function append()
+    {
+        const li_node=document.createElement("li");
+        const text_node=document.createTextNode("Water");
+        li_node.appendChild(text_node);
+        document.querySelector("ul").appendChild(li_node);
+
+
+    }
+    </script>
+    
+    
+</body>
+</html>
